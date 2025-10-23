@@ -195,5 +195,48 @@ int main() {
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
 
+
+    //comparação e definindo o menu de acesso e o ganahador
+
+    int menu;
+    printf("Escolha uma opção:\n");
+    printf("1. Compara a Populacao\n");
+    printf("2. Fazer depósito\n");
+    printf("3. Fazer saque\n");
+    scanf("%d", &menu);
+
+      switch (menu) {
+    case 1:
+          if (populacao1>populacao2){
+        printf("Carta 1 tem a maior populacao\n");
+    } else if (populacao2>populacao1) {
+         printf("Carta 2 tem a maior populacao\n");
+    }else {
+        printf("Aconteceu um empate\n");
+    }
+      break;
+    case 2:
+      printf("Segunda-feira\n");
+      break;
+    case 3:
+      printf("Terça-feira\n");
+      break;
+    case 4:
+      printf("Quarta-feira\n");
+      break;
+    case 5:
+      printf("Quinta-feira\n");
+      break;
+    case 6:
+      printf("Sexta-feira\n");
+      break;
+    case 7:
+      printf("Sábado\n");
+      break;
+    default:
+      printf("Opção inválido\n");
+  }
+ 
+
     return 0;
 }
